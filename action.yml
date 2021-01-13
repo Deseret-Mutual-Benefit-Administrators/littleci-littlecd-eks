@@ -11,6 +11,9 @@ inputs:
   account_id:
     description: AWS Account ID
     required: true
+  certificate_arn:
+    description: ARN of the certificate to use on the loadbalancer
+    required: false
   repo:
     description: Name of your ECR repository
     required: true
