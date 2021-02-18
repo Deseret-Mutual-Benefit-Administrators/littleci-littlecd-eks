@@ -23,6 +23,8 @@ jobs:
           access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           secret_access_key: ${{ secrets.SECRET_ACCESS_KEY }}
           account_id: ${{ secrets.AWS_ACCOUNT_ID }}
+          certificate_arn: ${{ secrets.DEV_AWS_CERTIFICATE_ARN }}
+          internal_load_balancer: true
           repo: your-ecr-repo-name
           region: us-west-2
           tags: 0.1.1.${{ github.run_number }},${{ github.sha }}

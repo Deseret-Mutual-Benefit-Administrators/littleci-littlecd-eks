@@ -8,6 +8,7 @@ function main() {
     validate "${INPUT_REGION}" "region"
     validate "${INPUT_ACCOUNT_ID}" "account_id"
     validate "${INPUT_CERTIFICATE_ARN}" "certificate_arn"
+    validate "${INPUT_INTERNAL_LOAD_BALANCER}" "internal_load_balancer"
     validate "${INPUT_REPO}" "repo"
     validate "${INPUT_EKS_CLUSTER_NAME}" "eks_cluster_name"
 

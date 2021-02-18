@@ -14,6 +14,9 @@ inputs:
   certificate_arn:
     description: ARN of the certificate to use on the loadbalancer
     required: false
+  internal_load_balancer:
+    description: Boolean value of whether or not to have the load balancer be internal
+    required: false
   repo:
     description: Name of your ECR repository
     required: true
